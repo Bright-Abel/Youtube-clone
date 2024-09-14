@@ -5,12 +5,14 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 // Extending Window interface to include SpeechRecognition types
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
   interface Window {
     SpeechRecognition: any;
     webkitSpeechRecognition: any;
   }
 }
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 const SearchBar = () => {
   const router = useRouter();
