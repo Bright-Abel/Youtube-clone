@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import Video from '@/components/Video';
 import { useState, useEffect } from 'react';
 import { SearchResult, getDataFromAPI } from '@/custom/action';
-const page = ({ params }: { params: { searchParams: string } }) => {
+const Page = ({ params }: { params: { searchParams: string } }) => {
   const { searchParams } = params;
   const [videos, setVideos] = useState<SearchResult[]>([]);
 
@@ -24,4 +24,4 @@ const page = ({ params }: { params: { searchParams: string } }) => {
     </Box>
   );
 };
-export default page;
+export default Page;
