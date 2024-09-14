@@ -3,7 +3,7 @@ import { demoProfilePicture } from '@/custom/constant';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
-import Skeleton from 'react-loading-skeleton';
+
 interface ChannelProfileProperties {
   channelDetail: ChannelDataProperties | undefined;
 }

@@ -1,10 +1,10 @@
 'use client';
-import { Paper, IconButton } from '@mui/material';
+import { IconButton } from '@mui/material';
 import { Search, Mic } from '@mui/icons-material';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-// Extend Window interface to include SpeechRecognition types
+// Extending Window interface to include SpeechRecognition types
 declare global {
   interface Window {
     SpeechRecognition: any;

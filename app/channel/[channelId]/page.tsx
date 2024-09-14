@@ -7,7 +7,7 @@ import { getDataFromAPI } from '@/custom/action';
 import { SearchResult, ChannelDataProperties } from '@/custom/action';
 import ChannelProfile from './_components/ChannelProfile';
 import ChannelSkeleton from './_components/ChannelSkeleton';
-const page = ({ params }: { params: { channelId: string } }) => {
+const Page = ({ params }: { params: { channelId: string } }) => {
   const { channelId } = params;
   const [videos, setVideos] = useState<SearchResult[]>([]);
   const [channelDetail, setChannelDetail] = useState<
@@ -52,5 +52,5 @@ const page = ({ params }: { params: { channelId: string } }) => {
     </Box>
   );
 };
-export default page;
+export default Page;
 //

@@ -14,11 +14,11 @@ import dynamic from 'next/dynamic';
 import RelatedSkeleton from './_components/RelatedSkeleton';
 import VideoSkeletonLoader from './_components/VideoSkeletonLoader';
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
-interface PageProps {
+interface PageProperties {
   params: { id: string };
 }
 
-const page: React.FC<PageProps> = ({ params }) => {
+const Page: React.FC<PageProperties> = ({ params }) => {
   const { id } = params;
   const [videoDetail, setVideoDetail] = useState<
     ChannelDataProperties | undefined
@@ -146,4 +146,4 @@ const page: React.FC<PageProps> = ({ params }) => {
     </Box>
   );
 };
-export default page;
+export default Page;

@@ -1,8 +1,8 @@
-import { Box, CardContent, CardMedia, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import Link from 'next/link';
-import { SearchResult, ChannelDataProperties } from '@/custom/action';
-import { demoChannelUrl, demoProfilePicture } from '@/custom/constant';
+import { SearchResult } from '@/custom/action';
+import { demoProfilePicture } from '@/custom/constant';
 import Image from 'next/image';
 
 interface VideoCardProperties {

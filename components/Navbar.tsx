@@ -1,4 +1,3 @@
-import { Stack } from '@mui/material';
 import Link from 'next/link';
 import { logo } from '@/custom/constant';
 import Image from 'next/image';

@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { getDataFromAPI } from '@/custom/action';
 import { SearchResult } from '@/custom/action';
 
-const page = () => {
+const Page = () => {
   const [hoverCategory, setHoverCategory] = useState<string>('New');
   const [videos, setVideos] = useState<SearchResult[]>([]);
   const date = new Date().getFullYear();
@@ -57,4 +57,4 @@ const page = () => {
     </Stack>
   );
 };
-export default page;
+export default Page;

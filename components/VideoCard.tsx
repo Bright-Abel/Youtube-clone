@@ -1,15 +1,11 @@
 'use client';
-import { Typography, Card, CardContent, CardMedia } from '@mui/material';
+import { Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SearchResult } from '@/custom/action';
 import clsx from 'clsx';
-import {
-  demoChannelTitle,
-  demoChannelUrl,
-  demoVideoUrl,
-} from '@/custom/constant';
+import { demoChannelTitle, demoVideoUrl } from '@/custom/constant';
 import { useState } from 'react';
 
 interface VideoCardProperties {

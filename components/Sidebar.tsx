@@ -2,7 +2,6 @@
 import categories from '@/custom/constant';
 import { Stack } from '@mui/material';
 import clsx from 'clsx';
-import { useState } from 'react';
 
 interface SidebarProperties {
   hoverCategory: string;
