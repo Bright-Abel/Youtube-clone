@@ -35,7 +35,7 @@ export default function RootLayout({
         <SkeletonTheme baseColor="#202020" highlightColor="#444">
           <Box
             sx={{ backgroundColor: '#000' }}
-            className="flex flex-col gap-4 "
+            className="flex flex-col gap-4 max-w-[90rem] w-full mx-auto"
           >
             <Navbar />
             <main className="">

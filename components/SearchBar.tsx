@@ -53,7 +53,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="flex gap-3 items-center w-full max-w-[732px]">
+    <div className="flex gap-3 items-center w-full max-w-[600px]">
       <form
         onSubmit={handleSubmit}
         className="border border-solid h-[40px] text-[#ffffffe0] flex bg-[#121212] rounded-[40px] border-[#303030] flex-1 pl-4"

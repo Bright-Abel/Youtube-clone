@@ -5,8 +5,8 @@ import SearchBar from './SearchBar';
 
 const Navbar = () => {
   return (
-    <div className="fixed bg-black w-full p-2 z-10">
-      <div className="lg:w-[75%] w-full flex justify-between items-center">
+    <div className="fixed bg-black p-2 z-10 max-w-[90rem] w-full mx-auto">
+      <div className="lg:w-[80%] w-full flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
             src={logo}
