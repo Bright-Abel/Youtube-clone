@@ -71,6 +71,10 @@ a {
   background-clip: content-box;
 }
 
+input:focus {
+  outline: none;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-[#ff000073];
   cursor: pointer;

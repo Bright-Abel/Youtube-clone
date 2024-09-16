@@ -132,6 +132,7 @@ const SearchBar = () => {
         <button
           type="button"
           onClick={handleFocus}
+          onTouchEnd={handleFocus}
           className="flex text-[#f1f1f1] md:hidden justify-center items-center"
         >
           <Search sx={{ width: '29px', height: '29px' }} />
