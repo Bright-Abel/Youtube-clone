@@ -43,6 +43,7 @@ const SearchBar = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    window.location.hash = '';
     if (searchParams) {
       router.push(`/search/${searchParams}`);
       setSearchParams(undefined);
