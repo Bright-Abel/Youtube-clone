@@ -1,7 +1,7 @@
 'use client';
 
 import { Search, Mic } from '@mui/icons-material';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import MobileSearchBar from './MobileSearchBar';
 
@@ -22,6 +22,7 @@ const SearchBar = () => {
     undefined
   );
   // const [isListening, setIsListening] = useState<boolean>(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -74,6 +75,13 @@ const SearchBar = () => {
     }
   };
 
+  const handleFocus = () => {
+    window.location.hash = 'searching';
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
+  };
+
   return (
     <div className="w-full max-w-[600px]">
       <div className="flex gap-3 items-center justify-end lg:justify-normal w-full ">
@@ -123,7 +131,7 @@ const SearchBar = () => {
 
         <button
           type="button"
-          onClick={() => (window.location.hash = 'searching')}
+          onClick={handleFocus}
           className="flex text-[#f1f1f1] md:hidden justify-center items-center"
         >
           <Search sx={{ width: '29px', height: '29px' }} />
@@ -135,6 +143,7 @@ const SearchBar = () => {
           setSearchParams={setSearchParams}
           handleSubmit={handleSubmit}
           startListening={startListening}
+          ref={inputRef}
         />
       )}
     </div>
