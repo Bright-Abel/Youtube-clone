@@ -63,6 +63,7 @@ const SearchBar = () => {
       recognition.onresult = (event: any) => {
         const transcript = event.results[0][0].transcript;
         if (transcript) {
+          window.location.hash = '';
           router.push(`/search/${transcript}`);
           setSearchParams(transcript);
         }

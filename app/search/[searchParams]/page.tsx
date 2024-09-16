@@ -15,7 +15,11 @@ const Page = ({ params }: { params: { searchParams: string } }) => {
 
   const decodeSearchParams = decodeURIComponent(searchParams);
   return (
-    <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
+    <Box
+      p={2}
+      sx={{ overflowY: 'auto', height: '90vh', flex: 1 }}
+      className="mt-16"
+    >
       <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: '#fff' }}>
         Search results for:{' '}
         <span className="text-[#F31503]">{decodeSearchParams}</span> videos
