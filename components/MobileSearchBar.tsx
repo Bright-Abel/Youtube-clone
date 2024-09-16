@@ -77,5 +77,5 @@ const MobileSearchBar = forwardRef<HTMLInputElement, MobileSearchProperties>(
     );
   }
 );
-
+MobileSearchBar.displayName = 'MobileSearchBar';
 export default MobileSearchBar;
